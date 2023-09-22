@@ -1,6 +1,7 @@
 # Akshaya Portfolio
 
-Welcome to my portfolio! I'm Akshaya Sunkari. You can access my portfolio at https://akshaya9.github.io/
+Welcome to my portfolio! I'm Akshaya Sunkari. 
+You can access my portfolio at https://akshaya9.github.io/
 
 ## Copyright and License
 
