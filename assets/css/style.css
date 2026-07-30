@@ -36,11 +36,11 @@
 
   /* solid */
 
-  --jet: hsl(0, 0%, 98%);
+  --jet: hsl(0, 0%, 100%);
   --onyx: hsl(0, 0%, 100%);
   --eerie-black-1: hsl(0, 0%, 100%);
   --eerie-black-2: hsl(0, 0%, 99%);
-  --smoky-black: hsl(0, 0%, 98%);
+  --smoky-black: hsl(0, 0%, 100%);
   --white-1: hsl(0, 0%, 10%);
   --white-2: hsl(0, 0%, 98%);
   --orange-yellow-crayola: hsl(120, 100%, 35%);
@@ -405,7 +405,7 @@ main {
 }
 
 .contact-title {
-  color: var(--light-gray-70);
+  color: hsl(0, 0%, 10%);
   font-size: var(--fs-8);
   text-transform: uppercase;
   margin-bottom: 2px;
@@ -598,7 +598,7 @@ main {
 }
 
 .skill-progress-bg {
-  background: var(--jet);
+  background: var(--white-1);
   width: 100%;
   height: 8px;
   border-radius: 10px;
