@@ -5,24 +5,24 @@
 :root {
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(0, 0%, 100%) 3%, 
-    hsl(0, 0%, 100%) 97%
+    hsl(240, 1%, 25%) 3%, 
+    hsl(0, 0%, 19%) 97%
   );
   --bg-gradient-jet: linear-gradient(
     to bottom right, 
-    hsla(0, 0%, 100%, 0.251) 0%, 
-    hsla(0, 0%, 98%, 0) 100%
-  ), hsl(0, 0%, 100%);
+    hsla(240, 1%, 18%, 0.251) 0%, 
+    hsla(240, 2%, 11%, 0) 100%
+  ), hsl(240, 2%, 13%);
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
-    hsl(120, 100%, 50%) 0%, 
+    hsl(0, 99%, 65%) 0%, 
     hsla(0, 100%, 62%, 0) 50%
   );
   --bg-gradient-yellow-2: linear-gradient(
     135deg, 
     hsla(0, 100%, 71%, 0.251) 0%, 
     hsla(0, 100%, 68%, 0) 59.86%
-  ), hsl(0, 0%, 96%);
+  ), hsl(240, 2%, 13%);
   --border-gradient-onyx: linear-gradient(
     to bottom right, 
     hsl(0, 0%, 25%) 0%, 
@@ -30,21 +30,21 @@
   );
   --text-gradient-yellow: linear-gradient(
     to right, 
-    hsl(120, 100%, 35%), 
-    hsl(120, 100%, 50%)
+    hsl(0, 100%, 50%), 
+    hsl(0, 99%, 65%)
   );
 
   /* solid */
 
-  --jet: hsl(0, 0%, 100%);
-  --onyx: hsl(0, 0%, 100%);
-  --eerie-black-1: hsl(0, 0%, 100%);
-  --eerie-black-2: hsl(0, 0%, 99%);
-  --smoky-black: hsl(0, 0%, 100%);
-  --white-1: hsl(0, 0%, 10%);
+  --jet: hsl(0, 0%, 22%);
+  --onyx: hsl(240, 1%, 17%);
+  --eerie-black-1: hsl(240, 2%, 13%);
+  --eerie-black-2: hsl(240, 2%, 12%);
+  --smoky-black: hsl(0, 0%, 7%);
+  --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsl(120, 100%, 35%);
-  --vegas-gold: hsl(120, 100%, 50%)
+  --orange-yellow-crayola: hsl(0, 100%, 50%);
+  --vegas-gold: hsl(0, 99%, 65%);
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
@@ -135,7 +135,10 @@ input, textarea {
 
 html { font-family: var(--ff-poppins); }
 
-body { background: var(--onyx); }
+body { background: var(--smoky-black); }
+
+
+
 
 
 /*-----------------------------------*\
@@ -178,7 +181,7 @@ article {
   content: "";
   position: absolute;
   inset: 1px;
-  background: var(--white-1);
+  background: var(--eerie-black-1);
   border-radius: inherit;
   z-index: -1;
 }
@@ -201,7 +204,7 @@ article.active {
 .h3,
 .h4,
 .h5 {
-  color: hsl(0, 0%, 98%);
+  color: var(--white-2);
   text-transform: capitalize;
 }
 
@@ -251,7 +254,7 @@ article.active {
 
 .content-card {
   position: relative;
-  background: hsl(0, 0%, 15%);
+  background: var(--border-gradient-onyx);
   padding: 15px;
   padding-top: 45px;
   border-radius: 14px;
@@ -264,7 +267,7 @@ article.active {
   content: "";
   position: absolute;
   inset: 1px;
-  background: var(--white-1);
+  background: var(--bg-gradient-jet);
   border-radius: inherit;
   z-index: -1;
 }
@@ -326,7 +329,7 @@ main {
 }
 
 .info-content .name {
-  color: var(--onyx);
+  color: var(--white-2);
   font-size: var(--fs-3);
   font-weight: var(--fw-500);
   letter-spacing: -0.25px;
@@ -334,8 +337,8 @@ main {
 }
 
 .info-content .title {
-  color: var(--onyx);
-  background: hsl(0, 0%, 20%);
+  color: var(--white-1);
+  background: var(--onyx);
   font-size: var(--fs-8);
   font-weight: var(--fw-300);
   width: max-content;
@@ -350,7 +353,7 @@ main {
   border-radius: 0 15px;
   font-size: 13px;
   color: var(--orange-yellow-crayola);
-  background: hsl(0, 0%, 15%);
+  background: var(--border-gradient-onyx);
   padding: 10px;
   box-shadow: var(--shadow-2);
   transition: var(--transition-1);
@@ -362,7 +365,7 @@ main {
   position: absolute;
   inset: 1px;
   border-radius: inherit;
-  background: var(--white-1);
+  background: var(--bg-gradient-jet);
   transition: var(--transition-1);
   z-index: -1;
 }
@@ -405,7 +408,7 @@ main {
 }
 
 .contact-title {
-  color: hsl(0, 0%, 100%);
+  color: var(--light-gray-70);
   font-size: var(--fs-8);
   text-transform: uppercase;
   margin-bottom: 2px;
@@ -448,7 +451,7 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: hsla(240, 1%, 17%, 0.1);
+  background: hsla(240, 1%, 17%, 0.75);
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
@@ -598,7 +601,7 @@ main {
 }
 
 .skill-progress-bg {
-  background: var(--white-1);
+  background: var(--jet);
   width: 100%;
   height: 8px;
   border-radius: 10px;
@@ -756,7 +759,7 @@ main {
 .project-category { margin-left: 10px; }
 
 .project-title {
-  color: var(--jet);
+  color: var(--white-2);
   font-size: var(--fs-5);
   font-weight: var(--fw-400);
   text-transform: capitalize;
@@ -764,7 +767,7 @@ main {
 }
 
 .project-category {
-  color: var(--white-2);
+  color: var(--light-gray-70);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
 }
